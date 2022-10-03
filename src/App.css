@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background-color: #021519;
+
+}
+
+.App {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 1024px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.filter__list{
+  color:rgb(46, 153, 8);
+  cursor: pointer;
+}
+
+.div__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 220px;
+}
+
+.form__container {
+  font-family: 'Lacquer', cursive;
+
+}
+
+.input__box{
+  background-color: rgb(45 126 15);
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  color: #10aec5;
+  font-family: 'Lacquer', cursive;
+
+}
+.input__button{
+  background-color: rgb(45 126 15);
+  border-radius: 0px 20px 20px 0px;
+  height: 52px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lacquer', cursive;
+  color: #10aec5;
+
+}
+.input__button:active{
+  background-color: rgb(46, 153, 8);
+
+}
+
+.information{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}

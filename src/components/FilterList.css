@@ -1,0 +1,14 @@
+.filterList__container {
+  list-style: none;
+
+}
+
+.autocomplete__list {
+  list-style: none;
+}
+
+.filter__list {
+  color: rgb(46, 153, 8);
+  cursor: pointer;
+  list-style: none;
+}
