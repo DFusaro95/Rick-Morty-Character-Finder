@@ -56,7 +56,7 @@ function App() {
       <div className="div__container">
         <header>
           <div className='header__image'>
-            <img src="./public/logohd.jpg" alt="IMG" />
+            <img src="/logohd.jpg" alt="IMG" />
           </div>
         </header>
         <form onSubmit={handleSubmit} className='form__container'>
