@@ -1,6 +1,6 @@
 .info__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: rgb(23 123 0);
@@ -8,6 +8,8 @@
   border: 2px solid rgb(164 218 124);
   border-radius: 10px;
   width: 50%;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .info__title{
@@ -20,5 +22,5 @@
   margin: 0;
   list-style: none;
   font-family: 'Lacquer', cursive;
-
+  padding: 5px;
 }

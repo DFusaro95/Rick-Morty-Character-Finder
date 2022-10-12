@@ -9,6 +9,21 @@
   margin: 0 auto;
 }
 
+.background__img{
+  background-image: url('/stars.gif');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+}
 .filter__list{
   color:rgb(46, 153, 8);
   cursor: pointer;
@@ -20,6 +35,7 @@
   justify-content: center;
   align-items: center;
   max-width: 1024px;
+  padding: 10px;
 }
 
 .header__image{

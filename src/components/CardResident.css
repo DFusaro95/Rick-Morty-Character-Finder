@@ -57,15 +57,29 @@
   align-content: center;
   justify-content: center;
   line-height: 15px;
-
 }
-
-.list__item {
+.list__item1{
   padding: 10px;
   width: 80%;
   background-color: #02b5d585;
   text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
+}
+.list__item2 {
+  padding: 10px;
+  width: 80%;
+  background-color: #02b5d585;
+  text-align: center;
+}
+.list__item3{
+  padding: 10px;
+  width: 80%;
+  background-color: #02b5d585;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media (min-width: 769px){

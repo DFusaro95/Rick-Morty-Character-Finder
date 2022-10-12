@@ -6,7 +6,6 @@ import CardResident from './components/CardResident'
 import Error from './components/Error'
 import FilterList from './components/FilterList'
 import LocationInfo from './components/LocationInfo'
-import Pagination from './components/Pagination'
 import getRandomNumber from './utils/getRandomNumber'
 
 function App() {
@@ -54,46 +53,47 @@ function App() {
 
   return (
     <div className="App">
-      <div className="div__container">
-        <header>
-          <div className='header__image'>
-            <img src="/logohd.jpg" alt="IMG" />
-          </div>
-        </header>
-        <form onSubmit={handleSubmit} className='form__container'>
-          <div className="input__container">
-            <input
-              className='input__box'
-              id='idLocation'
-              placeholder='Search your dimension..'
-              type="text"
-              onChange={handleChange}
-            />
-            <button className='input__button'>Search</button>
-          </div>
-          <FilterList
-            suggestedList={suggestedList}
-            setSearchLocation={setSearchLocation} />
-        </form>
-      </div>
-      {
-        hasError ?
-          <Error />
-          :
-          <>
-            <LocationInfo location={location} />
-            <div className='information'>
-              {
-                location?.residents.map(url => (
-                  <CardResident
-                    key={url}
-                    url={url} />
-                ))
-              }
+      <div className="background__img">
+        <div className="div__container">
+          <header>
+            <div className='header__image'>
+              <img src="/header.gif" alt="IMG" />
             </div>
-          </>
-      }
-      <Pagination />
+          </header>
+          <form onSubmit={handleSubmit} className='form__container'>
+            <div className="input__container">
+              <input
+                className='input__box'
+                id='idLocation'
+                placeholder='Search your dimension..'
+                type="text"
+                onChange={handleChange}
+              />
+              <button className='input__button'>Search</button>
+            </div>
+            <FilterList
+              suggestedList={suggestedList}
+              setSearchLocation={setSearchLocation} />
+          </form>
+        </div>
+        {
+          hasError ?
+            <Error />
+            :
+            <>
+              <LocationInfo location={location} />
+              <div className='information'>
+                {
+                  location?.residents.map(url => (
+                    <CardResident
+                      key={url}
+                      url={url} />
+                  ))
+                }
+              </div>
+            </>
+        }
+      </div>
     </div>
   )
 }
