@@ -13,14 +13,14 @@ const FilterList = ({ suggestedList, setSearchLocation }) => {
     <ul className='filterList__container' >
       {
         suggestedList?.map(location => (
-          <div className="autocomplete__list">
-            <li
-              className='filter__list'
-              onClick={() => handleClick(location.id)}
-              key={location.id}>
 
-              {location.name}</li>
-          </div>
+          <li
+            className='filter__list'
+            onClick={() => handleClick(location.id)}
+            key={location.id}>
+
+            👾 {location.name}</li>
+
         ))
       }
     </ul>

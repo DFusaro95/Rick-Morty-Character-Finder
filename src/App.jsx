@@ -6,6 +6,7 @@ import CardResident from './components/CardResident'
 import Error from './components/Error'
 import FilterList from './components/FilterList'
 import LocationInfo from './components/LocationInfo'
+import Pagination from './components/Pagination'
 import getRandomNumber from './utils/getRandomNumber'
 
 function App() {
@@ -60,14 +61,16 @@ function App() {
           </div>
         </header>
         <form onSubmit={handleSubmit} className='form__container'>
-          <input
-            className='input__box'
-            id='idLocation'
-            placeholder='Enter a number from 1 to 126..'
-            type="text"
-            onChange={handleChange}
-          />
-          <button className='input__button'>Search</button>
+          <div className="input__container">
+            <input
+              className='input__box'
+              id='idLocation'
+              placeholder='Search your dimension..'
+              type="text"
+              onChange={handleChange}
+            />
+            <button className='input__button'>Search</button>
+          </div>
           <FilterList
             suggestedList={suggestedList}
             setSearchLocation={setSearchLocation} />
@@ -90,6 +93,7 @@ function App() {
             </div>
           </>
       }
+      <Pagination />
     </div>
   )
 }

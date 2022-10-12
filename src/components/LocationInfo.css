@@ -8,21 +8,17 @@
   border: 2px solid rgb(164 218 124);
   border-radius: 10px;
   width: 50%;
-
 }
 
 .info__title{
   margin: 0;
   padding: 20px;
-  list-style: none;
   font-family: 'Creepster', cursive;
-  font-size: 40px;
-
 }
 
 .info__list{
   margin: 0;
   list-style: none;
   font-family: 'Lacquer', cursive;
-  font-size: 20px;
+
 }
